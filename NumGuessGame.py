@@ -19,4 +19,4 @@ if guess == secret:
     print("Yeah!You got it!")
 
 else:
-    print("Answer:", secret)
+    print "Answer:", secret
