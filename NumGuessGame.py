@@ -1,6 +1,6 @@
 import random
 
-secret = random.randint(1, 100)
+secret = random.randint(0, 99)
 guess = int(0)
 tries = int(0)
 
@@ -19,4 +19,4 @@ if guess == secret:
     print("Yeah!You got it!")
 
 else:
-    print("Answer:", secret);
+    print("Answer:", secret)
