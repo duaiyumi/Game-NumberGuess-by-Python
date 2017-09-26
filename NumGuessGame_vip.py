@@ -2,10 +2,10 @@
     # 方便出中文版，采用utf-8字符
 
 import random
-secret = random.randint(0, 99)
+secret = random.randint(1,100)
 guess = int(0)
 tries = int(0)
-    # 加载随机数模块，生成了一个0-99的随机整数为答案。并将"猜的数字(guess)"和"次数(tries)"初始化。
+    # 加载随机数模块，生成了一个1-99的随机整数为答案。并将"猜的数字(guess)"和"次数(tries)"初始化。
 
 print("我是个可怕的海盗，罗伯特。我有个秘密！")
 print("猜一个0-99的整数，你有6的机会。")
@@ -20,15 +20,15 @@ while int(guess) != secret and tries < 6:
         print(secret)
     # 为"BF"预留的后门，直接查看随机整数。默认值为724。
 
-    elif int(guess) < 0 or int(guess) > 99:
+    elif int(guess) < 1 or int(guess) > 99:
         print("超出范围啦！")
     # 检测用户输入数值是否符合范围。
 
-    elif int(guess) < secret and -1 < int(guess) < 100:
+    elif int(guess) < secret and 1 < int(guess) < 100:
         print("太低了！")
     # 用户输入数值低于随机整数。
 
-    elif int(guess) > secret and -1 < int(guess) < 100:
+    elif int(guess) > secret and 1 < int(guess) < 100:
         print("高了！高了！")
     # 用户输入数值高于随机整数。
 
